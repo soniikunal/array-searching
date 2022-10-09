@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array searching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <label for="search">Search Relative Terms</label>
+            <br>
+            <input type="search" id="search"  name="search" autofocus>
+        <br>
+        <div class="checkbox"  id="radiobtnId">
+            <input type="radio" value="1" onchange="checkoptionval(this)" name="option" id="startsWith()">
+            <label for="startsWith()">startsWith()</label>
+            <input type="radio" value="2" onchange="checkoptionval(this)" name="option" id="endsWith()">
+            <label for="endsWith()">endsWith()</label>
+            <input type="radio" value="3" onchange="checkoptionval(this)" name="option" id="includes()">
+            <label for="includes()">includes()</label>
+            <input type="radio" value="4" onchange="checkoptionval(this)" name="option" id="equals()">
+            <label for="equals()">equals()</label>
+
+        </div>
+        <div class="subbutton">
+        <input type="submit" id="sub" value="submit" onclick="searchValue()" disabled > 
+    </div>
+        <br>
+        <!-- <table>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>URL</th>
+            </tr>
+            <tr>
+              <td id="outputId">ID</td>
+              <td id="outputName" >NAME</td>
+              <td id="outputURL">URL</td>
+            </tr>
+
+        </table> -->
+        <table>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>URL</th>
+            </tr>
+            <tbody id="TbodyId">
+                
+            </tbody>
+
+        </table>
+
+   
+    </div>
+
+
+    <div id="box"></div>
+    <script src="script.js"></script>
+</body>
+</html>
